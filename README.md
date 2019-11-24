@@ -14,11 +14,11 @@ JVectorMap 是一個優秀的、兼容性強的 jQuery 地圖插件。
 
 ## 目錄結構
 
-![](http://wx1.sinaimg.cn/large/cf5b72a1ly1fvv432zeqzj20b806gaaa.jpg)
+![](https://i.imgur.com/9kRBcwL.png)
 
 - 红色框中的文件是必须要引入的内容。
 
-- 綠色框中的文件是展示的地圖，可自行到官網下載需要的地圖 : <http://jvectormap.com/maps/world/world/>，複製到 js 目錄。
+- 藍色框中的文件是展示的地圖，可自行到官網下載需要的地圖 : <http://jvectormap.com/maps/world/world/>，複製到 js 目錄。
 
 - index.html 中需要添加足跡位置和相關樣式。
 
