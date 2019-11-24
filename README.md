@@ -1,6 +1,6 @@
 # How to use jVectorMap to create your own traveling footprint
 
-![My footprint](http://wx1.sinaimg.cn/large/cf5b72a1ly1fvv1gupvz0j20xx0op760.jpg)
+![My footprint](https://i.imgur.com/TqaKqox.png)
 
 ## jVectorMap
 
@@ -175,7 +175,7 @@ JVectorMap 是一個優秀的、兼容性強的 jQuery 地圖插件。
 ## 下載代碼
 
 ```
-git clone https://github.com/HelloWuJiaYi/jVectorMap-Footprint
+git clone https://github.com/daekony/traveling-footprint-creater
 ```
 
 
