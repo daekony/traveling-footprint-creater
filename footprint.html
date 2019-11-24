@@ -1,0 +1,91 @@
+<!--
+
+link : http://daekony.github.io
+name : Daekony
+mail : kevinchengtn@gmail.com
+
+-->
+
+<html>
+	<head>
+        <meta charset="UTF-8">
+
+		<!--加入 jQuery 框架-->
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<!--加入jVectorMap-->
+		<script type="text/javascript" src="js/jquery-jvectormap-1.2.2.min.js"></script>
+		<!--引入樣式表-->
+		<link href="js/jquery-jvectormap-1.2.2.css" rel="stylesheet" media="screen">
+
+
+		<!--引入中國地圖資料庫-->
+		<!--script type="text/javascript" src="js/jquery-jvectormap-cn-merc-en.js"></script-->
+
+		<!--引入美國地圖資料庫-->
+		<!--script type="text/javascript" src="js/jquery-jvectormap-us-aea.js"></script-->
+		<!--引入世紀地圖資料庫-->
+		<script type="text/javascript" src="js/jquery-jvectormap-world-mill.js"></script>
+
+	</head>
+<body>
+	<!--background-color: 地圖背景顏色-->
+	<div id="map" style="background-color:#353535"> </div>
+	<script>
+		$('#map').vectorMap({
+
+			// 此處更改地圖
+			//map: 'cn_merc_en',   // 中國地圖
+			//map: 'us_aea',     // 美國地圖
+			map: 'world_mill', // 世界地圖
+
+
+			backgroundColor: 'transparent',
+			zoomMin: 0.9, // 鼠標縮放時的最小比例
+			zoomMax: 2.4, // 鼠標縮放時的最大比例
+			focusOn: {
+				x: 0.55,
+				y: 2,
+				scale: 0.9
+			},
+			regionStyle: {
+				initial: {
+					fill: '#e5e5e5',   // 地圖顏色
+					"fill-opacity": 1, // 省份（州）是否隱藏，鼠標滑動时顯示; 1：顯示，2：隱藏。
+					stroke: 'none',
+					"stroke-width": 0,
+					"stroke-opacity": 1
+				},
+				hover: {
+					fill: '#ccc',  // 鼠標滑動至某省份的高亮颜色。
+					"fill-opacity": 0.8
+				},
+				selected: {
+					fill: 'yellow'
+				},
+				selectedHover: {}
+			},
+			markerStyle: {
+		        initial: {
+		            fill: '#fd8888', // 足跡位置的填充颜色
+		            stroke: '#fff'   // 足跡位置的描邊颜色
+		        },
+				hover: {
+					fill: '#fd2020', // 鼠標滑動至足跡位置後的填充颜色
+					stroke: '#fff',  // 鼠標滑動至足跡位置後的描邊颜色
+					"fill-opacity": 0.8
+				},
+		    },
+			markers: [ // 足跡位置
+
+				// {latLng: [經度（保留兩位小數）, 緯度（保留兩位小數）], name: '城市名稱'},
+				// 推荐查詢經緯度網站：http://www.gpsspg.com/maps.htm
+
+		        {latLng: [37.5349173255,-122.1937410210], name: 'LA'},
+		        {latLng: [35.968146849800014,-114.92079180220003], name: 'LV'},
+				{latLng: [25.03,121.52], name: 'Taipei'},
+				{latLng: [22.99,120.18], name: 'Tainan'},
+		        
+		    ]
+		});
+	</script>
+</html>
